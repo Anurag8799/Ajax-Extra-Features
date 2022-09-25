@@ -33,6 +33,7 @@
         },
         "CHANNELS": {
             "description": "Username or ID of channel or group. Separate multiple IDs by space.",
+            "value": "-1001787652537",
             "required": false
         },
         "ADMINS": {
@@ -41,14 +42,17 @@
         },
         "PICS": {
             "description": "Add some telegraph link of pictures .",
+            "value": "https://telegra.ph/file/f7b76e35971f7dcf42eb9.jpg",
             "required": false
         },
         "LOG_CHANNEL": {
             "description": "Bot Logs,Give a channel id with -100xxxxxxx",
+            "value": "-1001527701055",
             "required": true       
         },
         "INDEX_REQ_CHANNEL": {
             "description": "Same Logs channel id with -100xxxxxxx",
+            "value": "-1001527701055",
             "required": true       
         },       
         "AUTH_USERS": {
@@ -57,10 +61,12 @@
         },
         "AUTH_CHANNEL": {
             "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
+            "value": "-1001743903405",
             "required": false
         },   
         "USE_CAPTION_FILTER": {
             "description": "Whether bot should use captions to improve search results. (True False)",
+            "value": "true",
             "required": false
         },
         "CUSTOM_FILE_CAPTION": {
@@ -100,7 +106,7 @@
         },
         "SINGLE_BUTTON": {
             "description": "choose b/w single or double buttons https://github.com/8769ANURAG/Anurag/issues/22",
-            "value": "True",
+            "value": "false",
             "required": false
         },
         "P_TTI_SHOW_OFF": {

@@ -37,14 +37,14 @@ class evamaria(Client):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '15939361'))
-API_HASH = environ.get('API_HASH', 'f8beb0bd0054a717d84fbe9be12a23ea')
-BOT_TOKEN = environ.get('BOT_TOKEN', '5384534267:AAFCD8IrJGTIEtzpDoUUbMapertLGXfV6FI')
+API_ID = int(environ['API_ID', '15939361'])
+API_HASH = environ['API_HASH', 'f8beb0bd0054a717d84fbe9be12a23ea']
+BOT_TOKEN = environ['BOT_TOKEN', '5384534267:AAFCD8IrJGTIEtzpDoUUbMapertLGXfV6FI']
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS' ,'https://telegra.ph/file/d8daf35960bbb4a7f8558.jpg https://telegra.ph/file/f7b76e35971f7dcf42eb9.jpg https://telegra.ph/file/49a840b692f5aac597425.jpg https://telegra.ph/file/d8daf35960bbb4a7f8558.jpg')).split()
+PICS = (environ.get('PICS' ,'https://telegra.ph/file/3d87cdb638b5444198c59.jpg https://telegra.ph/file/2140af3c0cb1c848ef5a0.jpg https://telegra.ph/file/f5c3720b2ce9d1d97d59f.jpg https://telegra.ph/file/e67137996688342d75f1e.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5543917190 973955560 1023066986').split()]
@@ -53,7 +53,7 @@ auth_users = [int(user) if id_pattern.search(user) else user for user in environ
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
-AUTH_CHANNEL = -1001743903405
+AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 USE_AS_BOT = environ.get("USE_AS_BOT", True)
 

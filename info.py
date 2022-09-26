@@ -71,7 +71,7 @@ COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://anuragb7:anuragb7@cluster0.g5kbflk.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "anuragb7")
+DATABASE_NAME = environ.get('DATABASE_NAME', "anurag8")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #Downloader

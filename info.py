@@ -37,8 +37,8 @@ class evamaria(Client):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '15939361'))
-API_HASH = environ.get('API_HASH', 'f8beb0bd0054a717d84fbe9be12a23ea')
+API_ID = int(environ.get('API_ID', '18238683'))
+API_HASH = environ.get('API_HASH', '1068ecf4ac70a8f6ac161b7512bbf128')
 BOT_TOKEN = environ.get('BOT_TOKEN', '5783403755:AAG8bDv7z-ibWF7LJFi_7Pq3McO9kI1UXjU')
 
 # Bot settings
@@ -71,7 +71,7 @@ COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://anuragb7:anuragb7@cluster0.g5kbflk.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Anuragb4")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Anuragb7")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Anurag_files')
 
 #Downloader
